@@ -55,3 +55,40 @@
     }
 
 }
+
+@media (max-width: 768px) {
+    .carlist-layout{
+        
+        .full-width{
+            width: 80%;
+            .head{   
+                
+                h3{
+                    
+                }
+            }
+            .car{
+                
+            }
+        }
+        .half-width-body{
+            width: 80%;
+            .half-width-wrapper{
+                
+                .half-width{
+                    width: 100%;
+                    .head{   
+                        
+                        h3{
+                            
+                        }
+                    }
+                    .car{
+                        justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+    
+    }
+}

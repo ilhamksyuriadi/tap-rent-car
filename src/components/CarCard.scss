@@ -18,3 +18,29 @@
         font-weight: 100;
     }
 }
+
+@media (max-width: 1024px){
+    .card-layout{
+        width: 200px;
+        height: 190px;
+        img{
+            
+        }
+        h4{
+
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .card-layout{
+        width: 180px;
+        height: 190px;
+        img{
+            
+        }
+        h4{
+
+        }
+    }
+}
