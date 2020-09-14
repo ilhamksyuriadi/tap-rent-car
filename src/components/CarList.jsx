@@ -60,6 +60,18 @@ export default function CarList() {
                     </div>
                 </div>
             </div>
+            <div className="cta-wrapper">
+                <div className="cta">
+                    <h3>Berminat? Hubungi kami di 082265483157, atau</h3>
+                    <a target="_blank" href="https://wa.me/6282265483157" rel="noopener noreferrer">
+                       <img src={`../assets/logo/whatsapp.png`} alt=""/> Klik Disini!
+                    </a>
+                </div>
+                <div className="terms">
+                    <p><span className="red">*</span> Kontak langsung untuk harga</p>
+                    <p><span className="red">*</span> Terdapat paket lepas kunci, antar / jemput, sewa supir</p>
+                </div>
+            </div>
         </div>
     )
 }
