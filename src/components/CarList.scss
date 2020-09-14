@@ -1,6 +1,6 @@
 .carlist-layout{
     width: 100vw;
-    min-height: 100vh;
+    // min-height: 100vh;
     background: white;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@
     }
     .half-width-body{
         width: 90%;
+        margin-bottom: 48px;
         .half-width-wrapper{
             width: 100%;
             display: flex;
@@ -34,7 +35,7 @@
             .half-width{
                 margin-top: 48px;
                 width: 47%;
-                height: 300px;
+                // height: 300px;
                 display: flex;
                 flex-direction: column;
                 .head{   
@@ -85,6 +86,43 @@
                     }
                     .car{
                         justify-content: space-evenly;
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 426px) {
+    .carlist-layout{
+        
+        .full-width{
+            width: 80%;
+            .head{   
+                
+                h3{
+                    
+                }
+            }
+            .car{
+                justify-content: space-around;
+            }
+        }
+        .half-width-body{
+            width: 80%;
+            .half-width-wrapper{
+                
+                .half-width{
+                    width: 100%;
+                    .head{   
+                        
+                        h3{
+                            
+                        }
+                    }
+                    .car{
+                        justify-content: space-around;
                     }
                 }
             }
