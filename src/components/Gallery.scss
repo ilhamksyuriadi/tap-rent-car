@@ -1,5 +1,58 @@
 .gallery-layout{
     width: 100vw;
-    height: 100vh;
-    background: blanchedalmond;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 42px;
+        color: #434343;
+        font-weight: 400;
+        margin-top: 48px;
+    }
+    .content{
+        width: 90%;
+        // height: 100px;
+        background: beige;
+        margin-top: 30px;
+        margin-bottom: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        img{
+            width: 30%;
+            height: auto;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 769px){
+    .gallery-layout{
+        
+        h2{
+            font-size: 32px;
+        }
+        .content{
+            
+            img{
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .gallery-layout{
+        
+        h2{
+            font-size: 20px;
+        }
+        .content{
+            
+            img{
+                
+            }
+        }
+    }
 }
