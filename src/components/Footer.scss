@@ -82,19 +82,22 @@
     }
 }
 
-@media (max-width: 1024) {
+@media (max-width: 768px) {
     .footer-layout{
         
         .content{
             display: flex;
-            flex-direction: column;
-            background: beige;
+            flex-direction: column-reverse;
+            // background: beige;
             .contact{
-                
+                width: 100vw;
+                // background: red;
                 .content-wrapper{
-                    
+                    width: 80%;
+                    // background: blue;
                     .content{
-                        
+                        display: flex;
+                        flex-direction: row;
                         img{
                             
                         }
@@ -105,9 +108,10 @@
                 }
             }
             .about{
-                
+                width: 100%;
                 .bio-wrapper{
-                    
+                    width: 80%;
+                    // background: bisque;
                     h4{
                         
                     }
