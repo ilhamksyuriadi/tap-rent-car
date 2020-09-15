@@ -13,7 +13,7 @@
     .content{
         width: 90%;
         // height: 100px;
-        background: beige;
+        // background: beige;
         margin-top: 30px;
         margin-bottom: 48px;
         display: flex;
@@ -32,11 +32,12 @@
         
         h2{
             font-size: 32px;
+            margin-top: 42px;
         }
         .content{
-            
+            margin-top: 0px;
             img{
-                
+                width: 28%;
             }
         }
     }
@@ -47,11 +48,12 @@
         
         h2{
             font-size: 20px;
+            margin-top: 30px;
         }
         .content{
-            
+            margin-bottom: 36px;
             img{
-                
+                width: 40%;
             }
         }
     }
