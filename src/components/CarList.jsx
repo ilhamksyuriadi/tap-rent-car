@@ -62,7 +62,7 @@ export default function CarList() {
             </div>
             <div className="cta-wrapper">
                 <div className="cta">
-                    <h3>Berminat? Hubungi kami di 082265483157, atau</h3>
+                    <h3>Berminat? Telfon kami di 081280379725, WhatsApp di 082265483157 atau</h3>
                     <a target="_blank" href="https://wa.me/6289686889359" rel="noopener noreferrer">
                        <img src={`../assets/logo/whatsapp.png`} alt=""/> Klik Disini!
                     </a>

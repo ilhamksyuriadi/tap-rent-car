@@ -1,5 +1,136 @@
 .footer-layout{
     width: 100vw;
-    height: 45vh;
-    background: burlywood;
+    background: #D3D3D3;
+    .content{
+        width: 100%;
+        display: flex;
+        .contact{
+            width: 50%;
+            height: 100%;
+            // background: beige;
+            display: flex;
+            justify-content: center;
+            margin: 30px 30px;
+            .content-wrapper{
+                // background: chocolate;
+                width: 90%;
+                .content{
+                    margin: 12px 0px;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 30px;
+                        filter: opacity(50%)
+                    }
+                    p{
+                        margin-left: 12px;
+                        font-size: 14px;
+                        color: #646464;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+        .about{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            .bio-wrapper{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                // background: chocolate;
+                margin: 24px 0px;
+                h4{
+                    font-size: 20px;
+                    width: 100%;
+                    color: #828282;
+                }
+                .bio{
+                    margin-top: 12px;
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        width: 78%;
+                        text-align: justify;
+                        color: #646464;
+                    }
+                }
+                .socmed{
+                    margin-top: 10px;
+                    img{
+                        width: 40px;
+                        margin-right: 16px;
+                        filter: opacity(50%);
+                        transition: 0.5s;
+                    }
+                    img:hover{
+                        filter: opacity(70%)
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        background: #8D8D8D;
+        height: 60px;
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024) {
+    .footer-layout{
+        
+        .content{
+            display: flex;
+            flex-direction: column;
+            background: beige;
+            .contact{
+                
+                .content-wrapper{
+                    
+                    .content{
+                        
+                        img{
+                            
+                        }
+                        p{
+                            
+                        }
+                    }
+                }
+            }
+            .about{
+                
+                .bio-wrapper{
+                    
+                    h4{
+                        
+                    }
+                    .bio{
+                        
+                        p{
+                            
+                        }
+                    }
+                    .socmed{
+                        
+                        img{
+                            
+                        }
+                        img:hover{
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            
+        }
+    }
 }
