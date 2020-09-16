@@ -2,28 +2,70 @@ import React, { useState } from 'react';
 import './CarList.scss';
 import CarCard from './CarCard';
 import { CarState } from '../config/CarState';
+import ViewImage from './ViewImage';
 
 export default function CarList() {
-    const [state] = useState(CarState)
-
-    const daily_car = state.daily_car.map(car => {
-        return <CarCard img={car.img} name={car.name} />
+    const [state,setState] = useState({
+        ...CarState,
+        show: false,
+        image: ''
     })
 
-    const wedding_car = state.wedding_car.map(car => {
-        return <CarCard img={car.img} name={car.name} />
+    const handleOpenImage = (img) => {
+        const new_state = {
+            ...state,
+            show: true,
+            image: `car/${img}`
+        }
+        setState(new_state)
+    }
+
+    const handleCloseImage = () => {
+        const new_state = {
+            ...state,
+            show: false,
+            image: ''
+        }
+        setState(new_state);
+    }
+
+    const daily_car = state.daily_car.map((car,index) => {
+        return  (
+            <span key={index} onClick={() => handleOpenImage(car.img)}>
+                <CarCard img={car.img} name={car.name} />
+            </span>
+        )
     })
 
-    const holiday_car = state.holiday_car.map(car => {
-        return <CarCard img={car.img} name={car.name} />
+    const wedding_car = state.wedding_car.map((car,index) => {
+        return  (
+            <span key={index} onClick={() => handleOpenImage(car.img)}>
+                <CarCard img={car.img} name={car.name} />
+            </span>
+        )
     })
 
-    const group_car = state.group_car.map(car => {
-        return <CarCard img={car.img} name={car.name} />
+    const holiday_car = state.holiday_car.map((car,index) => {
+        return  (
+            <span key={index} onClick={() => handleOpenImage(car.img)}>
+                <CarCard img={car.img} name={car.name} />
+            </span>
+        )
+    })
+
+    const group_car = state.group_car.map((car, index) => {
+        return  (
+            <span key={index} onClick={() => handleOpenImage(car.img)}>
+                <CarCard img={car.img} name={car.name} />
+            </span>
+        )
     })
 
     return (
         <div className="carlist-layout">
+            {
+                state.show ? <ViewImage img={state.image} closeImage={handleCloseImage}></ViewImage> : <span></span>
+            }
             <div className="full-width">
                 <div className="head">
                     <h3>Mobil Sehari-hari</h3>

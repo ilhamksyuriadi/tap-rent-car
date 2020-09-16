@@ -4,34 +4,64 @@
     .content{
         width: 100%;
         display: flex;
-        .contact{
+        flex-flow: row wrap;
+        // background: black
+        .contact-layout{
             width: 50%;
-            height: 100%;
-            // background: beige;
+            // background: bisque;
             display: flex;
             justify-content: center;
-            margin: 30px 30px;
-            .content-wrapper{
-                // background: chocolate;
+            .contact{
                 width: 90%;
-                .content{
-                    margin: 12px 0px;
+                // background: beige;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px 0px;
+                .content-wrapper{
+                    // background: chocolate;
+                    width: 90%;
                     display: flex;
-                    align-items: center;
-                    img{
-                        width: 30px;
-                        filter: opacity(50%)
+                    // flex-wrap: wrap;
+                    flex-flow: row wrap;
+                    justify-content: flex-start;
+                    .content{
+                        margin: 12px 0px;
+                        display: flex;
+                        align-items: center;
+                        // background: red;
+                        width: 50%;
+                        text-decoration: none;
+                        img{
+                            width: 30px;
+                            filter: opacity(50%)
+                        }
+                        p{
+                            margin-left: 12px;
+                            font-size: 14px;
+                            color: #646464;
+                            text-align: justify;
+                        }
                     }
-                    p{
-                        margin-left: 12px;
-                        font-size: 14px;
-                        color: #646464;
-                        text-align: justify;
+                    .clickable-content{
+                        img{
+                            transition: 0.5s;
+                        }
+                        p{
+                            transition: 0.5s;
+                        }
+                    }
+                    .clickable-content:hover > img{
+                        filter: opacity(80%);
+                    }
+                    .clickable-content:hover > p{
+                        color: rgb(31, 31, 31);
                     }
                 }
             }
         }
-        .about{
+        .about-layout{
+            // background: blanchedalmond;
             width: 50%;
             display: flex;
             justify-content: center;
@@ -56,16 +86,31 @@
                         color: #646464;
                     }
                 }
-                .socmed{
-                    margin-top: 10px;
+            }
+        }
+        .location-layout{
+            width: 100vw;
+            display: flex;
+            .location{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                // background: red;
+                .location-wrapper{
+                    // background: blanchedalmond;
+                    margin: 30px 0px;
+                    display: flex;
+                    align-items: center;
+                    width: 85%;
                     img{
-                        width: 40px;
-                        margin-right: 16px;
+                        width: 30px;
                         filter: opacity(50%);
-                        transition: 0.5s;
                     }
-                    img:hover{
-                        filter: opacity(70%)
+                    p{
+                        margin-left: 12px;
+                        font-size: 14px;
+                        color: #646464;
+                        text-align: justify;
                     }
                 }
             }
@@ -82,59 +127,59 @@
     }
 }
 
-@media (max-width: 768px) {
-    .footer-layout{
+// @media (max-width: 768px) {
+//     .footer-layout{
         
-        .content{
-            display: flex;
-            flex-direction: column-reverse;
-            // background: beige;
-            .contact{
-                width: 100vw;
-                // background: red;
-                .content-wrapper{
-                    width: 80%;
-                    // background: blue;
-                    .content{
-                        display: flex;
-                        flex-direction: row;
-                        img{
+//         .content{
+//             display: flex;
+//             flex-direction: column-reverse;
+//             // background: beige;
+//             .contact{
+//                 width: 100vw;
+//                 // background: red;
+//                 .content-wrapper{
+//                     width: 80%;
+//                     // background: blue;
+//                     .content{
+//                         display: flex;
+//                         flex-direction: row;
+//                         img{
                             
-                        }
-                        p{
+//                         }
+//                         p{
                             
-                        }
-                    }
-                }
-            }
-            .about{
-                width: 100%;
-                .bio-wrapper{
-                    width: 80%;
-                    // background: bisque;
-                    h4{
+//                         }
+//                     }
+//                 }
+//             }
+//             .about{
+//                 width: 100%;
+//                 .bio-wrapper{
+//                     width: 80%;
+//                     // background: bisque;
+//                     h4{
                         
-                    }
-                    .bio{
+//                     }
+//                     .bio{
                         
-                        p{
+//                         p{
                             
-                        }
-                    }
-                    .socmed{
+//                         }
+//                     }
+//                     .socmed{
                         
-                        img{
+//                         img{
                             
-                        }
-                        img:hover{
+//                         }
+//                         img:hover{
                             
-                        }
-                    }
-                }
-            }
-        }
-        .footer{
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         .footer{
             
-        }
-    }
-}
+//         }
+//     }
+// }

@@ -3,7 +3,7 @@ import Home from '../components/Home';
 import Category from '../components/Category';
 import CarList from '../components/CarList';
 import Gallery from '../components/Gallery';
-// import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 
 const Main = () => {
     return(
@@ -12,7 +12,7 @@ const Main = () => {
             <Category></Category>
             <CarList></CarList>
             <Gallery></Gallery>
-            {/* <Footer></Footer> */}
+            <Footer></Footer>
         </div>
     )
 }
