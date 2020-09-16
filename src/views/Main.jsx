@@ -12,7 +12,7 @@ const Main = () => {
             <Category></Category>
             <CarList></CarList>
             <Gallery></Gallery>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
         </div>
     )
 }
