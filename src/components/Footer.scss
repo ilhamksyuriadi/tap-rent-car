@@ -338,7 +338,7 @@
                         justify-content: space-evenly;
                         .content{
                             // background: beige;
-                            width: 200px;
+                            width: 50%;
                             margin: 6px 0px;
                             img{
                                 width: 25px;
@@ -412,7 +412,9 @@
         }
         .footer{
             width: 100vw;
-            // background: red;
+            p{
+                font-size: 12px;
+            }
         }
     }
 }
