@@ -218,3 +218,201 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .footer-layout{
+        // display: none;
+        .content{
+            display: flex;
+            flex-flow: row wrap;
+            .contact-layout{
+                width: 100%;
+                // background: blanchedalmond;
+                order: 3;
+                .contact{
+                    // background: chocolate;
+                    width: 95%;
+                    margin: 6px 0px;
+                    .content-wrapper{
+                        // background: green;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        .content{
+                            // background: beige;
+                            width: 200px;
+                            margin: 6px 0px;
+                            img{
+                                width: 25px;
+                            }
+                            p{
+                                font-size: 12px;
+                                margin-left: 6px;
+                            }
+                        }
+                        .clickable-content{
+                            img{
+                                
+                            }
+                            p{
+                                
+                            }
+                        }
+                        .clickable-content:hover > img{
+                            
+                        }
+                        .clickable-content:hover > p{
+                            
+                        }
+                    }
+                }
+            }
+            .about-layout{
+                width: 100%;
+                // background: beige;
+                order: 1;
+                .bio-wrapper{
+                    width: 85%;
+                    // background: chocolate;
+                    h4{
+
+                    }
+                    .bio{
+                        // background: chocolate;
+                        p{
+                            // background: blue;
+                            width: 75%;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .location-layout{
+                width: 100vw;
+                // background: blanchedalmond;
+                flex-flow: row wrap;
+                display: flex;
+                order: 2;
+                .location{
+                    width: 100%;
+                    // background: beige;
+                    .location-wrapper{
+                        width: 90%;
+                        margin: 12px 0px;
+                        // background: chocolate;
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 25px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            width: 100vw;
+            // background: red;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .footer-layout{
+        // display: none;
+        .content{
+            display: flex;
+            flex-flow: row wrap;
+            .contact-layout{
+                width: 100%;
+                // background: blanchedalmond;
+                order: 3;
+                .contact{
+                    // background: chocolate;
+                    width: 95%;
+                    margin: 6px 0px;
+                    .content-wrapper{
+                        // background: green;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        .content{
+                            // background: beige;
+                            width: 200px;
+                            margin: 6px 0px;
+                            img{
+                                width: 25px;
+                            }
+                            p{
+                                font-size: 12px;
+                                margin-left: 6px;
+                            }
+                        }
+                        .clickable-content{
+                            img{
+                                
+                            }
+                            p{
+                                
+                            }
+                        }
+                        .clickable-content:hover > img{
+                            
+                        }
+                        .clickable-content:hover > p{
+                            
+                        }
+                    }
+                }
+            }
+            .about-layout{
+                width: 100%;
+                // background: beige;
+                order: 1;
+                .bio-wrapper{
+                    width: 85%;
+                    // background: chocolate;
+                    h4{
+
+                    }
+                    .bio{
+                        // background: chocolate;
+                        p{
+                            // background: blue;
+                            width: 60%;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .location-layout{
+                width: 100vw;
+                // background: blanchedalmond;
+                flex-flow: row wrap;
+                display: flex;
+                order: 2;
+                .location{
+                    width: 100%;
+                    // background: beige;
+                    .location-wrapper{
+                        width: 90%;
+                        margin: 12px 0px;
+                        // background: chocolate;
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 25px;
+                        }
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            width: 100vw;
+            // background: red;
+        }
+    }
+}
