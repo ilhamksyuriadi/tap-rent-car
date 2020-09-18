@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Gallery.scss';
 import ViewImage from './ViewImage';
+import { Element } from 'react-scroll';
 
 export default function Gallery() {
     const [state,setState] = useState({
@@ -25,7 +26,7 @@ export default function Gallery() {
     }
 
     return (
-        <div className="gallery-layout">
+        <Element id="galeri" className="gallery-layout">
             {
                 state.show ? <ViewImage img={state.image} closeImage={handleCloseImage}></ViewImage> : <span></span>
             }
@@ -38,6 +39,6 @@ export default function Gallery() {
                 <img onClick={() => handleOpenImage('galeri/5.jpeg')} src={`../assets/galeri/5.jpeg`} alt=""/>
                 <img onClick={() => handleOpenImage('galeri/6.jpeg')} src={`../assets/galeri/6.jpeg`} alt=""/>
             </div>
-        </div>
+        </Element>
     )
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import './Category.scss';
+import { Element } from 'react-scroll';
 
 export default function Category() {
     return (
-        <div className="category-layout">
+        <Element id="kategori" className="category-layout">
             <h2>Berbagai Pilihan Mobil Sesuai Kebutuhanmu</h2>
             <div className="category-content">
                 <div className="category-wrapper">
@@ -35,6 +36,6 @@ export default function Category() {
                     </p>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }

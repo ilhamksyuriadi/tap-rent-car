@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.scss';
+import { Element } from 'react-scroll';
 
 const Home = () => {
     return (
-        <div className="home-layout">
+        <Element id="home" className="home-layout">
             <div className="content">
                 <h1>Cari Sewa Mobil?</h1>
                 <p>
@@ -12,7 +13,7 @@ const Home = () => {
                     semua Tap Rent Car solusinya!
                 </p>
             </div>
-        </div>
+        </Element>
     )
 }
 

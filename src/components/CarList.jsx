@@ -3,6 +3,7 @@ import './CarList.scss';
 import CarCard from './CarCard';
 import { CarState } from '../config/CarState';
 import ViewImage from './ViewImage';
+import { Element } from 'react-scroll';
 
 export default function CarList() {
     const [state,setState] = useState({
@@ -62,7 +63,7 @@ export default function CarList() {
     })
 
     return (
-        <div className="carlist-layout">
+        <Element id="harga" className="carlist-layout">
             {
                 state.show ? <ViewImage img={state.image} closeImage={handleCloseImage}></ViewImage> : <span></span>
             }
@@ -114,6 +115,6 @@ export default function CarList() {
                     <p><span className="red">*</span> Terdapat paket lepas kunci, antar / jemput, sewa supir</p>
                 </div>
             </div>
-        </div>
+        </Element>
     )
 }
