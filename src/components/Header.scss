@@ -5,6 +5,7 @@ header{
     align-items: center;
     position: fixed;
     background: white;
+    border-bottom: 1px solid rgb(199, 199, 199);
     .logo{
         width: 80px;
         height: 40px;
@@ -41,7 +42,7 @@ header{
                 a{
                     // background: blanchedalmond;
                     color: rgb(88, 88, 88);
-                    line-height: 340%;
+                    line-height: 350%;
                     padding: 0px 18px;
                 }
                 .active{
@@ -72,7 +73,7 @@ header{
         position: fixed;
         background: white;
         .logo{
-            
+            margin-left: 20px;
         }
         img:hover{
             cursor: pointer;
@@ -89,7 +90,7 @@ header{
             margin: 0;
             // right: 0%;
             ul{
-                background: rgb(207, 207, 207);
+                background: rgb(230, 230, 230);
                 flex-direction: column;
                 justify-content: flex-start;
                 li{
