@@ -6,6 +6,8 @@ header{
     position: fixed;
     background: white;
     border-bottom: 1px solid rgb(199, 199, 199);
+    z-index: 1;
+    // display: none;
     .logo{
         width: 80px;
         height: 40px;

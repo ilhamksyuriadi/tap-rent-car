@@ -37,7 +37,7 @@
                         text-decoration: none;
                         img{
                             width: 30px;
-                            filter: opacity(50%)
+                            filter: opacity(100%)
                         }
                         p{
                             margin-left: 12px;
@@ -55,7 +55,7 @@
                         }
                     }
                     .clickable-content:hover > img{
-                        filter: opacity(80%);
+                        filter: opacity(100%);
                     }
                     .clickable-content:hover > p{
                         color: rgb(31, 31, 31);
@@ -107,7 +107,7 @@
                     width: 85%;
                     img{
                         width: 30px;
-                        filter: opacity(50%);
+                        filter: opacity(100%);
                     }
                     p{
                         margin-left: 12px;
