@@ -1,7 +1,7 @@
 .second-home-content-layout{
     width: 100vw;
     height: 100vh;
-    background: url('../../assets/backgrounds/home-bg.jpg');
+    background: url('../../assets/backgrounds/wedding-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 768px) {
-    .second-home-layout{
+    .second-home-content-layout{
         .second-content{
             h1{
                 font-size: 40px;
@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 426px) {
-    .second-home-layout{
+    .second-home-content-layout{
         .second-content{
             // background: burlywood;
             h1{

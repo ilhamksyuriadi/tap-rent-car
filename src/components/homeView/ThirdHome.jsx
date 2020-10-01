@@ -5,11 +5,11 @@ export default function ThirdHome() {
     return (
         <div className="third-home-content-layout">
             <div className="third-content">
-                <h1>Cari Sewa Mobil?</h1>
+                <h1>Pergi rombongan?</h1>
                 <p>
-                    Mobil lepas kunci, mobil dengan supir, mobil
-                    <br /> untuk liburan puncak dan Bandung <br />
-                    semua Tap Rent Car solusinya!
+                    Butuh mobil dengan kapasitas banyak?
+                    <br /> pulang kampung atau liburan rombongan? <br />
+                    Tap Rent Car juga sedia Bus dan Elf!
                 </p>
             </div>
         </div>

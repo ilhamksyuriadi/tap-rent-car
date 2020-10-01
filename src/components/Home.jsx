@@ -14,14 +14,13 @@ const Home = () => {
                 naturalSlideWidth={100}
                 naturalSlideHeight={100}
                 className="home-carousel"
-                totalSlides={2}
+                totalSlides={3}
                 orientation={"horizontal"}
                 infinite={true}
                 interval={4000}
                 isPlaying={true}
                 playDirection={'forward'}
                 // lockOnWindowScroll={true}
-                totalSlides={3}
                 // orientation={"vertical"}
                 // visibleSlides={1}
             >
