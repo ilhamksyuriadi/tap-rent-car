@@ -17,15 +17,15 @@ const Home = () => {
                 totalSlides={2}
                 orientation={"horizontal"}
                 infinite={true}
-                interval={5000}
-                // isPlaying={true}
+                interval={4000}
+                isPlaying={true}
                 playDirection={'forward'}
                 // lockOnWindowScroll={true}
                 totalSlides={3}
                 // orientation={"vertical"}
                 // visibleSlides={1}
             >
-                <Slider>
+                <Slider className="carousel-wrapper">
                     <Slide index={0}>
                         {/* <h1>First</h1> */}
                         <MainHome></MainHome>
@@ -38,8 +38,17 @@ const Home = () => {
                         <ThirdHome></ThirdHome>
                     </Slide>
                 </Slider>
-                <ButtonBack>Back</ButtonBack>
-                <ButtonNext>Next</ButtonNext>
+                <ButtonBack className="btn-back">
+                    <img className="arrow" src={`../assets/logo/back.png`} alt=""/>
+                </ButtonBack>
+                <ButtonNext className="btn-next">
+                    <img className="arrow" src={`../assets/logo/next.png`} alt=""/>
+                </ButtonNext>
+                <div className="dot-group">
+                    <Dot className="dot" slide={0}></Dot>
+                    <Dot className="dot" slide={1}></Dot>
+                    <Dot className="dot" slide={2}></Dot>
+                </div>
             </CarouselProvider>
         </Element>
     )
