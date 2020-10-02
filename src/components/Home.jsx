@@ -5,7 +5,7 @@ import MainHome from './homeView/MainHome';
 import SecondHome from './homeView/SecondHome';
 import ThirdHome from './homeView/ThirdHome';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Dot } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 
 const Home = () => {
     return (
@@ -20,17 +20,12 @@ const Home = () => {
                 interval={4000}
                 isPlaying={true}
                 playDirection={'forward'}
-                // lockOnWindowScroll={true}
-                // orientation={"vertical"}
-                // visibleSlides={1}
             >
                 <Slider className="carousel-wrapper">
                     <Slide index={0}>
-                        {/* <h1>First</h1> */}
                         <MainHome></MainHome>
                     </Slide>
                     <Slide index={1}>
-                        {/* <h1>Second</h1> */}
                         <SecondHome></SecondHome>
                     </Slide>
                     <Slide index={2}>
@@ -43,11 +38,11 @@ const Home = () => {
                 <ButtonNext className="btn-next">
                     <img className="arrow" src={`../assets/logo/next.png`} alt=""/>
                 </ButtonNext>
-                <div className="dot-group">
+                {/* <div className="dot-group">
                     <Dot className="dot" slide={0}></Dot>
                     <Dot className="dot" slide={1}></Dot>
                     <Dot className="dot" slide={2}></Dot>
-                </div>
+                </div> */}
             </CarouselProvider>
         </Element>
     )
