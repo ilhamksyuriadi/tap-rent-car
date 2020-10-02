@@ -5,7 +5,7 @@ import MainHome from './homeView/MainHome';
 import SecondHome from './homeView/SecondHome';
 import ThirdHome from './homeView/ThirdHome';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Dot } from 'pure-react-carousel';
 
 const Home = () => {
     return (
@@ -38,11 +38,11 @@ const Home = () => {
                 <ButtonNext className="btn-next">
                     <img className="arrow" src={`../assets/logo/next.png`} alt=""/>
                 </ButtonNext>
-                {/* <div className="dot-group">
+                <div className="dot-group">
                     <Dot className="dot" slide={0}></Dot>
                     <Dot className="dot" slide={1}></Dot>
                     <Dot className="dot" slide={2}></Dot>
-                </div> */}
+                </div>
             </CarouselProvider>
         </Element>
     )
