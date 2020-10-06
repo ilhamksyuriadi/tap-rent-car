@@ -7,6 +7,28 @@ import ThirdHome from './homeView/ThirdHome';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, Dot } from 'pure-react-carousel';
 
+const btnBack = {
+    WebkitTransition: 'all', // note the capital 'W' here
+    msTransition: 'all', // 'ms' is the only lowercase vendor prefix
+    position: 'absolute',
+    marginTop: '-23%',
+    left: '0',
+    width: '50px',
+    height: '50px',
+    borderRadius: '50%',
+    border: 'none',
+    outline: 'none',
+    marginLeft: '20px',
+    opacity: '50%',
+    transition: '0.5s'
+};
+
+const arrow = {
+    width: '60%',
+    marginLeft: 'auto',
+    marginRight: 'auto'
+}
+
 const Home = () => {
     return (
         <Element id="home" className="home-layout">
@@ -32,8 +54,8 @@ const Home = () => {
                         <ThirdHome></ThirdHome>
                     </Slide>
                 </Slider>
-                <ButtonBack className="btn-back">
-                    <img className="arrow" src={`../assets/logo/back.png`} alt=""/>
+                <ButtonBack style={btnBack}>
+                    <img style={arrow} src={`../assets/logo/back.png`} alt=""/>
                 </ButtonBack>
                 <ButtonNext className="btn-next">
                     <img className="arrow" src={`../assets/logo/next.png`} alt=""/>
