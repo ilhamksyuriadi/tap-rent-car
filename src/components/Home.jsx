@@ -23,10 +23,51 @@ const btnBack = {
     transition: '0.5s'
 };
 
+const btnNext = {
+    WebkitTransition: 'all', // note the capital 'W' here
+    msTransition: 'all', // 'ms' is the only lowercase vendor prefix
+    position: 'absolute',
+    marginTop: '-23%',
+    right: '0',
+    width: '50px',
+    height: '50px',
+    borderRadius: '50%',
+    border: 'none',
+    outline: 'none',
+    marginRight: '20px',
+    opacity: '50%',
+    transition: '0.5s'
+};
+
 const arrow = {
+    WebkitTransition: 'all', // note the capital 'W' here
+    msTransition: 'all', // 'ms' is the only lowercase vendor prefix
     width: '60%',
     marginLeft: 'auto',
     marginRight: 'auto'
+}
+
+const dotGroup = {
+    WebkitTransition: 'all', // note the capital 'W' here
+    msTransition: 'all', // 'ms' is the only lowercase vendor prefix
+    position: 'absolute',
+    left: '50%',
+    width: '80px',
+    marginTop: '-60px',
+    marginLeft: '-40px',
+    display: 'flex',
+    justifyContent: 'space-between'
+}
+
+const dot = {
+    WebkitTransition: 'all', // note the capital 'W' here
+    msTransition: 'all', // 'ms' is the only lowercase vendor prefix
+    outline: 'none',
+    height: '20px',
+    width: '20px',
+    borderRadius: '50%',
+    border: 'none',
+    opacity: '40%',
 }
 
 const Home = () => {
@@ -57,13 +98,13 @@ const Home = () => {
                 <ButtonBack style={btnBack}>
                     <img style={arrow} src={`../assets/logo/back.png`} alt=""/>
                 </ButtonBack>
-                <ButtonNext className="btn-next">
-                    <img className="arrow" src={`../assets/logo/next.png`} alt=""/>
+                <ButtonNext style={btnNext}>
+                    <img style={arrow} src={`../assets/logo/next.png`} alt=""/>
                 </ButtonNext>
-                <div className="dot-group">
-                    <Dot className="dot" slide={0}></Dot>
-                    <Dot className="dot" slide={1}></Dot>
-                    <Dot className="dot" slide={2}></Dot>
+                <div style={dotGroup}>
+                    <Dot style={dot} slide={0}></Dot>
+                    <Dot style={dot} slide={1}></Dot>
+                    <Dot style={dot} slide={2}></Dot>
                 </div>
             </CarouselProvider>
         </Element>
